@@ -4,6 +4,7 @@ import threading
 HOST = '127.0.0.1'
 PORT = 50000
 
+
 def receive_message(client_socket):
     while True:
         try:
@@ -18,6 +19,7 @@ def receive_message(client_socket):
         except Exception as e:
             print(f'[ERROR] {e}'+"\n")
             break
+
 
 # 连接服务端
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
